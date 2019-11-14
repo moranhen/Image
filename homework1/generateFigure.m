@@ -1,6 +1,6 @@
 function [img]=generateFigure(imgW,imgH)
 %创建一个长宽为规定长宽的白色图像
-   A=255*ones(imgW,imgH,3);
+   A=255*ones(imgH,imgW,3);
    %set(0,'defaultfigurecolor','w');
    A=uint8(A);
    A(:,1,:)=0;
